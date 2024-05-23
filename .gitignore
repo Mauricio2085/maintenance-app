@@ -1,12 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,nextjs,windows,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,nextjs,windows,visualstudiocode
 
-### NextJS ###
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
 # testing
 /coverage
 

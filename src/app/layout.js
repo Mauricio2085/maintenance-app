@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Image from 'next/image'
+import Logo  from '../../public/consultoria-estrategica.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +13,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className='w-full'>
+      <header className='w-full h-[15%] bg-[#1c1c1c]'>
+        <div className=' h-full pl-36 flex flex-row items-center'>
+          <Image
+            alt='Logo-main'
+            src={Logo}
+            style={{
+            width: '64px',
+            height: '64px',
+            padding: '10px'
+            }}
+          />
+          <h1 className=' text-gray-200'>MaintenanceSoft</h1>
+        </div>
+          
+</header>
+<main className="flex w-full flex-row items-center justify-between h-[70%] py-1 ">
+  {children}
+</main>
+
+<footer className='w-full h-[15%] bg-[#1c1c1c]'>
+    fhhfh
+  </footer>
+      </body>
     </html>
   )
 }
+
+// #683791
